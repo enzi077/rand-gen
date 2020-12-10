@@ -1,0 +1,3 @@
+[submodule "rand-gen-server"]
+	path = rand-gen-server
+	url = https://github.com/enzi077/rand-gen-server.git
