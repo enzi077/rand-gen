@@ -29,7 +29,7 @@ build/
 local.properties
 *.iml
 serverRoutes.js
-debug.keystore
+android/app/debug.keystore
 
 # node.js
 #
@@ -41,7 +41,7 @@ yarn-error.log
 buck-out/
 \.buckd/
 *.keystore
-!debug.keystore
+#!debug.keystore
 
 # fastlane
 #
