@@ -23,7 +23,7 @@ This repo contains a server side native mobile application, a client side websit
 1. `npm install`: This installs npm modules for the server<br/>
 2. `npm run dev`: Starts the server<br/>
 
-**To install the client (inside lyrix folder):**<br/>
+**To install the client (inside client-side folder):**<br/>
 1. `npm install`: This installs npm modules for the client<br/>
 2. `npm start`: Runs the local server on your system<br/>
 
