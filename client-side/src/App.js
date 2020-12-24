@@ -1,5 +1,5 @@
 import React, { useEffect, useState} from 'react';
-import {Grid,Card, CardContent, Typography, TextField, Button} from '@material-ui/core';
+import {Grid,Card, CardContent, Typography, TextField, Button, CircularProgress} from '@material-ui/core';
 import {styles} from './AppStyles.js';
 import {BASE_API_URL} from './serverRoutes'
 
@@ -8,7 +8,7 @@ function App() {
     const [username,updateUsername]=useState('')
     const [phone,updatePhone]=useState(0)
     const [email,updateEmail]=useState('')
-    const [para,setPara]=useState('')
+    const [para,setPara]=useState()
     const [submitUrl,setSubmitUrl]=useState('')
     
     useEffect(()=>{
@@ -23,6 +23,13 @@ function App() {
         setSubmitUrl(submit_url)
     }
     
+    if(!para) return(
+        <div style={styles.app__loader}>
+            <CircularProgress 
+                color="secondary"
+            />
+        </div>
+    )
   return (
     <div style={styles.app}>{
         para &&

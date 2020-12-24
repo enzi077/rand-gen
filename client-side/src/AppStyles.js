@@ -26,5 +26,14 @@ export const styles={
     },
     app__text:{
         marginBottom: '10px'
+    },
+    app__loader:{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100%',
+        minHeight: '100vh',
+        backgroundColor:"#6600cc",
+        overflowX:"hidden"
     }
 }
